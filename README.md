@@ -1,7 +1,7 @@
 ## PoisonedEye: Knowledge Poisoning Attack on Retrieval-Augmented Generation based Large Vision-Language Models
 
 ## What is this repo?
-This repo includes a implementation of the knowledge poisoning attack on Vision-Language Retrieval-Augmented Generation (VLRAG) systems. See our paper "PoisonedEye: Knowledge Poisoning Attack on Retrieval-Augmented Generation based Large Vision-Language Models" for details.
+This repo includes an implementation of the knowledge poisoning attack on Vision-Language Retrieval-Augmented Generation (VLRAG) systems. See our paper "PoisonedEye: Knowledge Poisoning Attack on Retrieval-Augmented Generation based Large Vision-Language Models" for details.
 
 ## Description of Files and Folders
 - ``data/`` : Contains the definition and structure of the M-BEIR dataset.

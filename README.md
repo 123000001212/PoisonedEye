@@ -53,7 +53,7 @@ gdown https://drive.google.com/uc?id=1wQBGk4Ha_rvYEA0X-8ECX-lwce4wHCBa
 # Extract the file
 unzip mbeir_oven_task8_2m_cand_pool.zip
 ```
-(Optional) Download ImageNet-1k, Places-365 (only for class-wise evalutaion)
+Download ImageNet-1k, Places-365 for class-wise evalutaion
 ```
 # go back to root dir of the repo
 cd ../../..
@@ -85,6 +85,9 @@ python mbeir_dataset_imageonly_webqa.py --model_path="siglip-so400m-patch14-384"
 ```
 
 ## Start Poisoning
+
+Note: the following poison type {text-only, poison-sample, poison-class} equals to {PE-B, PE-S, PE-C} in the paper.
+
 Sample-wise evaluation. poison_type $\in$ {text-only, poison-sample}
 ```
 python llava_inference_rag_poison_final.py \
@@ -97,6 +100,9 @@ python llava_inference_rag_poison_final.py \
 ```
 
 Class-wise evaluation. poison_type $\in$ {text-only, poison-sample, poison-class}
+
+Note: we used this evaluation type in our experiments.
+
 ```
 python llava_inference_rag_poison_final_class.py \
     --poison_type=poison-class \

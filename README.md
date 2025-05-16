@@ -47,8 +47,8 @@ Add full OVEN-Wiki cand_pool to M-BEIR
 # Navigate to the M-BEIR cand_pool directory "./M-BEIR/cand_pool/local"
 cd ./cand_pool/local
 
-# Download json.zip
-wget https://drive.google.com/file/d/1wQBGk4Ha_rvYEA0X-8ECX-lwce4wHCBa/view?usp=sharing
+# Download json.zip from "https://drive.google.com/file/d/1wQBGk4Ha_rvYEA0X-8ECX-lwce4wHCBa/view?usp=sharing"
+gdown https://drive.google.com/uc?id=1wQBGk4Ha_rvYEA0X-8ECX-lwce4wHCBa
 
 # Extract the file
 unzip mbeir_oven_task8_2m_cand_pool.zip

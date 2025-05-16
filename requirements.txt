@@ -1,0 +1,14 @@
+datasets==2.20.0
+faiss_cpu==1.9.0
+numpy==1.26.4
+scikit_learn==1.6.0
+torch==2.3.1
+torchvision==0.18.1
+tqdm==4.66.4
+transformers==4.47.1
+typeguard==4.3.0
+qwen-vl-utils==0.0.8
+accelerate==0.31.0
+sentence-transformers==3.2.0
+sentencepiece==0.2.0
+protobuf==3.20.3

@@ -65,6 +65,9 @@ cd ./imagenet-1k/data
 
 tar -xzf val_images.tar.gz
 
+# go back to root dir of the repo
+cd ../../..
+
 # Places-365
 huggingface-cli download --repo-type dataset --resume-download haideraltahan/wds_places365 --local-dir places365
 ```

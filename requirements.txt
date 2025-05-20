@@ -12,3 +12,5 @@ accelerate==0.31.0
 sentence-transformers==3.2.0
 sentencepiece==0.2.0
 protobuf==3.20.3
+ipykernel
+gdown

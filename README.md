@@ -82,9 +82,9 @@ huggingface-cli download --resume-download Qwen/Qwen2-VL-7B-Instruct --local-dir
 ## Create databases
 Build retrieval database with faiss index.
 ```
-python mbeir_dataset.py --model_path="siglip-so400m-patch14-384" --dim=1152 --beir_cand_pool_path="cand_pool/local/mbeir_oven_task8_2m_cand_pool.jsonl" --save_path="siglip_mbeir_oven_task8_2m_cand_pool.bin"
+python mbeir_dataset.py --model_path="siglip-so400m-patch14-384" --dim=1152 --beir_cand_pool_path="cand_pool/local/mbeir_oven_task8_2m_cand_pool.jsonl" --save_path="siglip_mbeir_oven_task8_2m_cand_pool.bin" --beir_path="./M-BEIR"
 
-python mbeir_dataset_imageonly_webqa.py --model_path="siglip-so400m-patch14-384" --dim=1152 --save_path="siglip_mbeir_webqa_task2_cand_pool.bin"
+python mbeir_dataset_imageonly_webqa.py --model_path="siglip-so400m-patch14-384" --dim=1152 --save_path="siglip_mbeir_webqa_task2_cand_pool.bin" --beir_path="./M-BEIR"
 ```
 
 ## Start Poisoning

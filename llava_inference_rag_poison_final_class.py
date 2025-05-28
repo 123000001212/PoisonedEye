@@ -86,13 +86,13 @@ if args.eval_dataset == 'imagenet-1k':
     class_dataset = Imagenet1k_withlabel(data_path=args.eval_dataset_path)
     query_dataset = ClassDatasetImageNet1k(class_dataset)
 elif args.eval_dataset == 'caltech-101':
-    class_dataset = load_dataset(path=args.eval_dataset_path, split='train', cache_dir='/data/cache')
+    class_dataset = load_dataset(path=args.eval_dataset_path, split='train', cache_dir='./cache')
     query_dataset = ClassDatasetCaltech101(class_dataset)
 elif args.eval_dataset == 'places-365':
-    class_dataset = load_dataset(path=args.eval_dataset_path, split='test', cache_dir='/data/cache')
+    class_dataset = load_dataset(path=args.eval_dataset_path, split='test', cache_dir='./cache')
     query_dataset = ClassDatasetPlaces365(class_dataset)
 elif args.eval_dataset == 'country-211':
-    class_dataset = load_dataset(path=args.eval_dataset_path, split='train', cache_dir='/data/cache')
+    class_dataset = load_dataset(path=args.eval_dataset_path, split='train', cache_dir='./cache')
     query_dataset = ClassDatasetCountry211(class_dataset)
 
 if 'llava' in args.llava_path:

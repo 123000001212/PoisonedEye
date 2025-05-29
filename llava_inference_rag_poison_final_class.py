@@ -33,7 +33,7 @@ device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 parser = argparse.ArgumentParser(description='RAG-poison')
 parser.add_argument('--poison_type', type=str, default="poison-class", help='type of poison to conduct',
                     choices=["text-only", "poison-sample", "poison-class"])
-parser.add_argument('--retrieval_encoder_path', type=str, default="./LLM/siglip-so400m-patch14-384", help='name or path to retrieval encoder')
+parser.add_argument('--retrieval_encoder_path', type=str, default="./siglip-so400m-patch14-384", help='name or path to retrieval encoder')
 parser.add_argument('--retrieval_database_path', type=str, default="siglip_mbeir_oven_task8_2m_cand_pool.bin", help='name or path to retrieval database')
 parser.add_argument('--img_database_path', type=str, default="siglip_mbeir_webqa_task2_cand_pool.bin", help='name or path to img database')
 parser.add_argument('--adv_encoder_path', type=str, default="/data/CLIP-ViT-H-14-laion2B-s32B-b79K", help='name or path to adv proxy encoder (only for custom encoder)')
@@ -41,7 +41,7 @@ parser.add_argument('--mbeir_path', type=str, default="./M-BEIR", help='path to 
 parser.add_argument('--mbeir_subset_name', type=str, default="oven", help='which task8 subset of M-BEIR to use', choices=['oven'])
 parser.add_argument('--eval_dataset', type=str, default="imagenet-1k", choices=['imagenet-1k', 'caltech-101', 'places-365', 'country-211'], help='eval dataset')
 parser.add_argument('--eval_dataset_path', type=str, default="./imagenet-1k/data", help='path to eval dataset')
-parser.add_argument('--llava_path', type=str, default="./LLM/llava-v1.6-mistral-7b-hf", help='name or path to llava model')
+parser.add_argument('--llava_path', type=str, default="./llava-v1.6-mistral-7b-hf", help='name or path to llava model')
 # parser.add_argument('--llava_path', type=str, default="/data/Qwen2-VL-7B-Instruct", help='name or path to llava model')
 
 parser.add_argument('--eval_number', type=int, default=1, help='number of evaluation samples per class')

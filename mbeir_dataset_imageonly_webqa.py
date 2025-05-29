@@ -15,7 +15,7 @@ from transformers import AutoProcessor, AutoModel
 import argparse
 
 parser = argparse.ArgumentParser(description='Create a faiss database on beir dataset\'s candidate pool')
-parser.add_argument('--model_path', type=str, default='./LLM/siglip-so400m-patch14-384', help='Model path to encode texts and images')
+parser.add_argument('--model_path', type=str, default='./siglip-so400m-patch14-384', help='Model path to encode texts and images')
 parser.add_argument('--beir_path', type=str, default='./M-BEIR', help='Path to beir dataset')
 parser.add_argument('--beir_cand_pool_path', type=str, default='cand_pool/local/mbeir_webqa_task2_cand_pool.jsonl', help='Path to beir dataset candidate pool')
 parser.add_argument('--save_path', type=str, default='siglip_mbeir_webqa_task2_cand_pool.bin', help='Path to save faiss database')

@@ -33,7 +33,7 @@ parser.add_argument('--retrieval_database_path', type=str, default="siglip_mbeir
 parser.add_argument('--mbeir_path', type=str, default="./M-BEIR", help='path to M-BEIR dataset')
 parser.add_argument('--mbeir_subset_name', type=str, default="infoseek", help='which task8 subset of M-BEIR to use', choices=['infoseek','oven'])
 parser.add_argument('--imagenet1k_path', type=str, default="./imagenet-1k/data", help='path to imagenet1k dataset')
-parser.add_argument('--llava_path', type=str, default="llava-v1.6-mistral-7b-hf", help='name or path to llava model')
+parser.add_argument('--llava_path', type=str, default="./llava-v1.6-mistral-7b-hf", help='name or path to llava model')
 
 parser.add_argument('--eval_number', type=int, default=2, help='number of evaluation samples')
 parser.add_argument('--poison_steps', type=int, default=100, help='number of poison steps (not for text-only)')

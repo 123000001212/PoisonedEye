@@ -41,7 +41,7 @@ parser.add_argument('--mbeir_path', type=str, default="./M-BEIR", help='path to 
 parser.add_argument('--mbeir_subset_name', type=str, default="oven", help='which task8 subset of M-BEIR to use', choices=['oven'])
 parser.add_argument('--eval_dataset', type=str, default="imagenet-1k", choices=['imagenet-1k', 'caltech-101', 'places-365', 'country-211'], help='eval dataset')
 parser.add_argument('--eval_dataset_path', type=str, default="./imagenet-1k/data", help='path to eval dataset')
-parser.add_argument('--llava_path', type=str, default="llava-v1.6-mistral-7b-hf", help='name or path to llava model')
+parser.add_argument('--llava_path', type=str, default="./llava-v1.6-mistral-7b-hf", help='name or path to llava model')
 # parser.add_argument('--llava_path', type=str, default="/data/Qwen2-VL-7B-Instruct", help='name or path to llava model')
 
 parser.add_argument('--eval_number', type=int, default=1, help='number of evaluation samples per class')

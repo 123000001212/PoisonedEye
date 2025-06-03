@@ -116,5 +116,10 @@ python llava_inference_rag_poison_final_class.py \
     --eval_dataset_path=places365 \
     --disable_tqdm=False
 ```
+## Example
+
+Please refer to `example.ipynb` for an example run.
+
 ## Citation 
+
 To be updated...

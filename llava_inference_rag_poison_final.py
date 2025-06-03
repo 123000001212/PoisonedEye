@@ -161,10 +161,6 @@ for data in query_dataset if args.disable_tqdm else tqdm(query_dataset):
             class_img_list = [image]
 
         for class_img in class_img_list:
-
-            # for test
-            # class_img = Image.open('context 1220130.png')
-
             total += 1
             # query database
             distances, indices = retrieval_database.query(text, class_img, k=args.retrieval_number)

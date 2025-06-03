@@ -43,7 +43,7 @@ def create_conversation(query_txt, query_img, cand_pool, cand_indices, cand_txt_
             })
         image_list.append(cand_data[cand_img_col_name])
 
-        cand_data[cand_img_col_name].save(f'context {indice}.png')
+        # cand_data[cand_img_col_name].save(f'context {indice}.png')
 
     conversation.append({
             "role": "user",

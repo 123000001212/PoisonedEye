@@ -169,7 +169,7 @@ for data in query_dataset if args.disable_tqdm else tqdm(query_dataset):
             # query database
             distances, indices = retrieval_database.query(text, class_img, k=args.retrieval_number)
 
-            class_img.save('class.png')
+            # class_img.save('class.png')
 
             if not args.retrieval_only:
                 # apply conversation template

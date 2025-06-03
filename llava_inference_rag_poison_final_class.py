@@ -135,8 +135,8 @@ for data, label in query_dataset if args.disable_tqdm else tqdm(query_dataset):
         aux_img_indices = deduplicate(aux_img_dist[0], aux_img_indices[0], k=args.aux_number//2)
         aux_imgs = [img_dataset[i]['img'] for i in aux_img_indices]
 
-        for index, im in enumerate(aux_imgs):
-            im.save(f"aux_{index}.png")
+        # for index, im in enumerate(aux_imgs):
+        #     im.save(f"aux_{index}.png")
 
         poison_image = retrieval_database.create_poison(poison_image_init, poison_text, aux_imgs, text, steps = args.poison_steps)
 

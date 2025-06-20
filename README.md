@@ -121,5 +121,12 @@ python llava_inference_rag_poison_final_class.py \
 Please refer to `example.ipynb` for an example run.
 
 ## Citation 
-
-To be updated...
+```
+@inproceedings{
+zhang2025poisonedeye,
+title={PoisonedEye: Knowledge Poisoning Attack on Retrieval-Augmented Generation based Large Vision-Language Models},
+author={Chenyang Zhang and Xiaoyu Zhang and Jian Lou and Kai Wu and Zilong Wang and Xiaofeng Chen},
+booktitle={Forty-second International Conference on Machine Learning},
+year={2025}
+}
+```

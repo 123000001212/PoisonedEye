@@ -85,6 +85,8 @@ Build retrieval database with faiss index.
 python mbeir_dataset.py --model_path="siglip-so400m-patch14-384" --dim=1152 --beir_cand_pool_path="cand_pool/local/mbeir_oven_task8_2m_cand_pool.jsonl" --save_path="siglip_mbeir_oven_task8_2m_cand_pool.bin" --beir_path="./M-BEIR"
 
 python mbeir_dataset_imageonly_webqa.py --model_path="siglip-so400m-patch14-384" --dim=1152 --save_path="siglip_mbeir_webqa_task2_cand_pool.bin" --beir_path="./M-BEIR"
+
+python mbeir_dataset_imageonly_imagenet.py --model_path="siglip-so400m-patch14-384" --dim=1152 --data_path="imagenet-1k/data" --save_path="siglip_imagenet1k_val_cand_pool.bin"
 ```
 
 ## Start Poisoning
@@ -123,10 +125,10 @@ Please refer to `example.ipynb` for an example run.
 ## Citation 
 ```
 @inproceedings{
-zhang2025poisonedeye,
-title={PoisonedEye: Knowledge Poisoning Attack on Retrieval-Augmented Generation based Large Vision-Language Models},
-author={Chenyang Zhang and Xiaoyu Zhang and Jian Lou and Kai Wu and Zilong Wang and Xiaofeng Chen},
-booktitle={Forty-second International Conference on Machine Learning},
-year={2025}
+    zhang2025poisonedeye,
+    title={PoisonedEye: Knowledge Poisoning Attack on Retrieval-Augmented Generation based Large Vision-Language Models},
+    author={Chenyang Zhang and Xiaoyu Zhang and Jian Lou and Kai Wu and Zilong Wang and Xiaofeng Chen},
+    booktitle={Forty-second International Conference on Machine Learning},
+    year={2025}
 }
 ```
